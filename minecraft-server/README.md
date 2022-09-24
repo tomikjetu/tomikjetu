@@ -1,8 +1,9 @@
-## COFFEE
+## MINECRAFT SERVER TEMPLATE
 
-The version might not be actual
+Template for a minecraft server website
 <br>
-See the current design [online](https://tomikjetu.me/portfolio/minecraft-server)
+See the design [online](https://tomikjetu.me/portfolio/minecraft-server)
+
 
 # Assets
 [Icons (svgrepo.com)](https://svgrepo.com)
