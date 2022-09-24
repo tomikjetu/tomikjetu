@@ -1,0 +1,287 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+@font-face {
+  font-family: "neon";
+  src: url("/assets/fonts/Neon.ttf");
+}
+
+@font-face {
+  font-family: "clip";
+  src: url("/assets/fonts/Clip.ttf");
+}
+
+@font-face{
+  font-family: "NeonBines";
+  src: url("/assets/fonts/NeonBines.ttf")
+}
+
+:root {
+  --foreground: #fff;
+  --text-shadow: #7e00ff;
+  --drink-shadow: #000000;
+  --neon-shadow:
+    0 0 7px var(--foreground),
+    0 0 10px var(--foreground),
+    0 0 21px var(--foreground),
+    0 0 42px var(--text-shadow),
+    0 0 82px var(--text-shadow),
+    0 0 92px var(--text-shadow),
+    0 0 102px var(--text-shadow),
+    0 0 151px var(--text-shadow);
+}
+
+html {
+  overflow: hidden;
+}
+
+header {
+  height: 100vh;
+  background: url("/assets/images/background.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+header .title {
+  position: absolute;
+  right: 0;
+
+  padding: 0.5em;
+
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+
+  user-select: none;
+
+  font-family: "neon";
+  font-size: 5em;
+  font-weight: 200;
+
+  color: var(--foreground);
+  text-shadow: var(--neon-shadow)
+}
+
+
+header .title :nth-child(2) {
+  animation: blink 3s infinite linear;
+}
+
+header .title::after {
+  content: "";
+  position: absolute;
+  top: 10%;
+  width: 7px;
+  height: 80%;
+  background-color: var(--foreground);
+  box-shadow: var(--neon-shadow);
+  border-radius: 20px;
+}
+
+@keyframes blink {
+  49%, 51%, 53%, 60%, 62% {
+    text-shadow: inherit;
+  }
+
+  50%, 52%, 61% {
+    text-shadow: none;
+  }
+}
+
+header .explore {
+  position: absolute;
+  bottom: 2em;
+  text-align: center;
+
+  width: 100%;
+
+  font-weight: 500;
+  font-size: 2em;
+  color: var(--foreground);
+  text-shadow: var(--neon-shadow);
+
+  font-family: "2";
+}
+
+
+.layer-wrapper {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  pointer-events: none;
+}
+
+.layer {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 100vh;
+  pointer-events: all;
+}
+
+.layer-1 {
+  background-color: #220043;
+  z-index: 50;
+}
+
+.layer-2 {
+  background-color: #380070;
+  z-index: 51;
+}
+
+.layer-3 {
+  background-color: #5802af;
+  z-index: 52;
+}
+
+.layer-4 {
+  background-color: #8000ff;
+  z-index: 53;
+}
+
+.layer-5 {
+  top: 100vh;
+  background: linear-gradient(rgba(165, 75, 255, 0.45), rgba(165, 75, 255, 0.45)), url("/assets/images/dj.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+  color: white;
+  z-index: 54;
+}
+
+.layer-wrapper.active .layer-1 {
+  animation: active 3s forwards;
+}
+
+.layer-wrapper.active .layer-2 {
+  animation: active 3s forwards 0.5s;
+}
+
+.layer-wrapper.active .layer-3 {
+  animation: active 3s forwards 1s;
+}
+
+.layer-wrapper.active .layer-4 {
+  animation: active 3s forwards 1.5s;
+}
+
+.layer-wrapper.active .layer-5 {
+  animation: active 3s forwards 2s;
+}
+
+/*  UNACTIVE   */
+
+.layer-wrapper.unactive .layer-1 {
+  top: 0;
+  animation: unactive 3s forwards 2s;
+}
+
+.layer-wrapper.unactive .layer-2 {
+  top: 0;
+  animation: unactive 3s forwards 1.5s;
+}
+
+.layer-wrapper.unactive .layer-3 {
+  top: 0;
+  animation: unactive 3s forwards 1s;
+}
+
+.layer-wrapper.unactive .layer-4 {
+  top: 0;
+  animation: unactive 3s forwards 0.5s;
+}
+
+.layer-wrapper.unactive .layer-5 {
+  top: 0;
+  animation: unactive 3s forwards;
+}
+
+@keyframes active {
+  100% {
+    top: 0;
+  }
+}
+
+@keyframes unactive {
+  0% {
+    top: 0;
+  }
+
+  100% {
+    top: 100%;
+  }
+}
+
+.layer-5 .back {
+  position: absolute;
+  top: 1em;
+  left: 50%;
+  transform: translateY(50%);
+  rotate: 90deg;
+
+  width: 3em;
+  cursor: pointer;
+}
+
+.layer-5 .content {
+  padding: 5em;
+}
+
+.layer h1,
+.layer p {
+  font-family: "clip";
+  font-weight: 200;
+  font-size: 3em;
+  padding: 1em;
+  text-align: center;
+  color: white;
+}
+
+.layer-5 .content h1,
+.layer-5 .content p {
+  padding: 0;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+  padding: 2em;
+}
+
+.grid .item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1em;
+}
+
+.grid .item p {
+  font-size: 2.2em;
+}
+
+.grid .item img {
+  width: 64px;
+  filter:
+    drop-shadow(0 0 0px var(--foreground)) drop-shadow(0 0 13px var(--drink-shadow)) drop-shadow(0 0 24px var(--drink-shadow));
+  user-select: none;
+}
+
+.line {
+  width: 100%;
+  height: 3px;
+  border-radius: 3px;
+  background-color: white;
+}
+
+.more > p{
+  font-family: "NeonBines";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+}

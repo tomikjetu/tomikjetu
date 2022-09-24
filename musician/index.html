@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+
+
+
+  <title>Musician</title>
+</head>
+
+<body>
+  <header>
+
+    <nav>
+      <ul class="left-nav">
+        <a href="#albums">
+          <li>Albums</li>
+        </a>
+        <a href="#tours">
+          <li>Tours</li>
+        </a>
+      </ul>
+      <h1 class="logo">Guitar Angel</h1>
+      <ul class="right-nav">
+        <a href="#about-me">
+          <li>About Me</li>
+        </a>
+        <a href="">
+          <li>Socials</li>
+        </a>
+      </ul>
+    </nav>
+
+
+    <div class="music-socials">
+      <a href="">
+        <img src="assets/icons/spotify.svg" alt="">
+      </a>
+      <a href="">
+        <img src="assets/icons/soundcloud.svg" alt="">
+      </a>
+      <a href="">
+        <img src="assets/icons/youtube.svg" alt="">
+      </a>
+    </div>
+
+  </header>
+
+
+  <section class="about-me" id="about-me">
+    <div class="col">
+      <h1>About me</h1>
+      <p>Hi, I'm Ben Dover, my pseudonym is <u>Guitar Angel</u>.
+        I started playing the guitar in early 2000's.
+        Releasing my first <u>hits</u> by end of the decade.
+        Winning several <u>musical awards</u> such as Grammy, MTV awards, Youtube Awards.
+        Thanks to all listening to my music! Amazing <u>20 million</u> streams. It's been crazy 2 decades of my life.
+      </p>
+    </div>
+    <div class="col image"></div>
+  </section>
+
+  <section class="albums" id="albums">
+    <h1>Released Albums</h1>
+    <div class="list">
+      <div class="album" id="album-cosmic" onclick="selectAlbum('cosmic')">
+        <img src="assets/images/albums/cosmic.png" alt="" class="cover">
+        <img src="assets/images/albums/cd-cosmic.png" alt="" class="cd">
+      </div>
+      <div class="album" id="album-vibrant" onclick="selectAlbum('vibrant')">
+        <img src="assets/images/albums/vibrant.png" alt="" class="cover">
+        <img src="assets/images/albums/cd-vibrant.png" alt="" class="cd">
+      </div>
+      <div class="album" id="album-minimal" onclick="selectAlbum('minimal')">
+        <img src="assets/images/albums/minimal.png" alt="" class="cover">
+        <img src="assets/images/albums/cd-minimal.png" alt="" class="cd">
+      </div>
+    </div>
+
+    <div class="songs">
+
+      <div class="song-list" id="songs-cosmic">
+        <h1>Cosmic</h1>
+        <div class="links">
+          <div class="placeholder">
+            <img src="assets/icons/headset.svg" alt="">
+          </div>
+          <div class="links-wrapper">
+            <a class="link" href="">
+              <img src="assets/icons/spotify.svg" alt="">
+            </a>
+            <a class="link" href="">
+              <img src="assets/icons/soundcloud.svg" alt="">
+            </a>
+            <a class="link" href="">
+              <img src="assets/icons/youtube.svg" alt="">
+            </a>
+          </div>
+        </div>
+        <ul>
+          <li>Intro <div class="listen" onclick="play(this)"><img src="assets/icons/play.svg" alt=""></div>
+          </li>
+          <li>Get Low <div class="listen" onclick="play(this)"><img src="assets/icons/play.svg" alt=""></div>
+          </li>
+          <li>Guitar Angels <div class="listen" onclick="play(this)"><img src="assets/icons/play.svg" alt=""></div>
+          </li>
+          <li>Love to Live<div class="listen" onclick="play(this)"><img src="assets/icons/play.svg" alt=""></div>
+          </li>
+          <li>Your Smiles <div class="listen" onclick="play(this)"><img src="assets/icons/play.svg" alt=""></div>
+          </li>
+          <li>Our Choices<div class="listen" onclick="play(this)"><img src="assets/icons/play.svg" alt=""></div>
+          </li>
+          <li>Pain Of World<div class="listen" onclick="play(this)"><img src="assets/icons/play.svg" alt=""></div>
+          </li>
+        </ul>
+      </div>
+      <div class="song-list" id="songs-vibrant">
+        <h1>Vibrant</h1>
+        <div class="links">
+          <div class="placeholder">
+            <img src="assets/icons/headset.svg" alt="">
+          </div>
+          <div class="links-wrapper">
+            <a class="link" href="">
+              <img src="assets/icons/spotify.svg" alt="">
+            </a>
+            <a class="link" href="">
+              <img src="assets/icons/soundcloud.svg" alt="">
+            </a>
+            <a class="link" href="">
+              <img src="assets/icons/youtube.svg" alt="">
+            </a>
+          </div>
+        </div>
+        <ul>
+          <li>Intro <div class="listen" onclick="play(this)"><img src="assets/icons/play.svg" alt=""></div>
+          </li>
+          <li>Get Low <div class="listen" onclick="play(this)"><img src="assets/icons/play.svg" alt=""></div>
+          </li>
+          <li>Guitar Angels <div class="listen" onclick="play(this)"><img src="assets/icons/play.svg" alt=""></div>
+          </li>
+          <li>Love to Live<div class="listen" onclick="play(this)"><img src="assets/icons/play.svg" alt=""></div>
+          </li>
+          <li>Your Smiles <div class="listen" onclick="play(this)"><img src="assets/icons/play.svg" alt=""></div>
+          </li>
+          <li>Our Choices<div class="listen" onclick="play(this)"><img src="assets/icons/play.svg" alt=""></div>
+          </li>
+          <li>Pain Of World<div class="listen" onclick="play(this)"><img src="assets/icons/play.svg" alt=""></div>
+          </li>
+        </ul>
+      </div>
+      <div class="song-list" id="songs-minimal">
+        <h1>Minimal</h1>
+        <div class="links">
+          <div class="placeholder">
+            <img src="assets/icons/headset.svg" alt="">
+          </div>
+          <div class="links-wrapper">
+            <a class="link" href="">
+              <img src="assets/icons/spotify.svg" alt="">
+            </a>
+            <a class="link" href="">
+              <img src="assets/icons/soundcloud.svg" alt="">
+            </a>
+            <a class="link" href="">
+              <img src="assets/icons/youtube.svg" alt="">
+            </a>
+          </div>
+        </div>
+        <ul>
+          <li>Intro <div class="listen" onclick="play(this)"><img src="assets/icons/play.svg" alt=""></div>
+          </li>
+          <li>Get Low <div class="listen" onclick="play(this)"><img src="assets/icons/play.svg" alt=""></div>
+          </li>
+          <li>Guitar Angels <div class="listen" onclick="play(this)"><img src="assets/icons/play.svg" alt=""></div>
+          </li>
+          <li>Love to Live<div class="listen" onclick="play(this)"><img src="assets/icons/play.svg" alt=""></div>
+          </li>
+          <li>Your Smiles <div class="listen" onclick="play(this)"><img src="assets/icons/play.svg" alt=""></div>
+          </li>
+          <li>Our Choices<div class="listen" onclick="play(this)"><img src="assets/icons/play.svg" alt=""></div>
+          </li>
+          <li>Pain Of World<div class="listen" onclick="play(this)"><img src="assets/icons/play.svg" alt=""></div>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <script>
+      function selectAlbum(name) {
+        //get elements
+        var album = document.querySelector(`#album-${name}`);
+        var songs = document.querySelector(`#songs-${name}`);
+
+        //remove last album from selectoin
+        var selected = document.querySelector(".selected");
+        if (selected) selected.classList.remove("selected");
+
+        //deactivate last song list
+        var active = document.querySelector(".active");
+        if (active) active.classList.remove("active");
+
+        //select new album and activate songlist
+        album.classList.add("selected");
+        songs.classList.add("active");
+      }
+
+      var audio = new Audio("https://www.looperman.com/media/loops/4055719/looperman-l-4055719-0308166-suis-moi-100-bpm-dsharp-minor-by-namelessprod.mp3");
+
+      audio.loop = true;
+
+      function play(song) {
+        //determine if pause was clicked
+        var pausing = song.classList.contains("playing-song");
+
+        //pause last song
+        var lastPlaying = document.querySelector(".playing-song");
+        if (lastPlaying) lastPlaying.classList.remove("playing-song");
+
+        //remove rolling animation from last playing cd
+        var rollingCd = document.querySelector(".playing");
+        if (rollingCd) rollingCd.classList.remove("playing");
+
+        audio.currentTime = 0;
+        audio.pause();
+
+        if (!pausing) {
+          //selected cd to add rolling animation
+          var Cd = document.querySelector(".selected");
+
+          //add classes
+          song.classList.add("playing-song");
+          Cd.classList.add("playing");
+
+          //TODO - load each song from element attribute
+
+          audio.play();
+        }
+
+      }
+    </script>
+
+  </section>
+
+  <section class="tours" id="tours">
+    <h1>Upcoming Tours</h1>
+    <div class="list">
+      <div class="tour">
+        <p class="city">Bratislava</p>
+        <div class="date">12.3.2023</div>
+        <button class="book-now">BOOK TICKET</button>
+      </div>
+      <div class="tour">
+        <p class="city">New York</p>
+        <div class="date">7.4.2023</div>
+        <button class="book-now">BOOK TICKET</button>
+      </div>
+      <div class="tour">
+        <p class="city">Hong Kong</p>
+        <div class="date">28.5.2023</div>
+        <button class="book-now sold">SOLD OUT</button>
+      </div>
+      <div class="tour">
+        <p class="city">Egypt</p>
+        <div class="date">19.6.2022</div>
+        <button class="book-now">BOOK TICKET</button>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <a href="https://tomikjetu.me">
+      Made with <img src="assets/icons/heart.svg"> by tomikjetu.
+    </a>
+  </footer>
+
+</body>
+
+</html>
