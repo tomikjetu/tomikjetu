@@ -1,8 +1,8 @@
 ## COFFEE
+One of my first webite designs
 
-The version might not be actual
 <br>
-See the current design [online](https://tomikjetu.me/portfolio/coffee)
+Display design [online](https://htmlpreview.github.io/?https://github.com/tomikjetu/tomikjetu/blob/main/2022/coffee/index.html)
 
 # Assets
 [Icons (svgrepo.com)](https://svgrepo.com)
