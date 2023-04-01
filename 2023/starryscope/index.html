@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hviezdoskop</title>
+  <link rel="stylesheet" href="styles/style.css">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+
+  <script src="scripts/script.js" defer></script>
+  <script src="scripts/stars.js" defer></script>
+</head>
+
+<body>
+
+
+  <section id="intro">
+    <canvas class="star-container"> </canvas>
+    <div class="header">
+      <a href="/">
+        <h1 class="title">StarryScope</h1>
+      </a>
+      <div class="sub-title">
+        <p id="date"></p>
+        <p id="name">tomikjetu</p>
+      </div>
+    </div>
+
+    <div class="zodiac-wrapper">
+      <div id="zodiac" class="ciclegraph">
+
+        <div class="sign" name="Baran" api-name="baran">
+          <img src="assets/signs/aries.svg" class="sign-icon">
+        </div>
+        <div class="sign" name="Ryby" api-name="ryby">
+          <img src="assets/signs/pisces.svg" class="sign-icon">
+        </div>
+        <div class="sign" name="Vodnár" api-name="vodnar">
+          <img src="assets/signs/aquarius.svg" class="sign-icon">
+        </div>
+        <div class="sign " name="Kozorožec" api-name="kozorozec">
+          <img src="assets/signs/capricorn.svg" class="sign-icon">
+        </div>
+        <div class="sign" name="Strelec" api-name="strelec">
+          <img src="assets/signs/sagittarius.svg" class="sign-icon">
+        </div>
+        <div class="sign" name="Škorpión" api-name="skorpion">
+          <img src="assets/signs/scorpio.svg" class="sign-icon">
+        </div>
+        <div class="sign" name="Váhy" api-name="vahy">
+          <img src="assets/signs/libra.svg" class="sign-icon">
+        </div>
+        <div class="sign" name="Panna" api-name="panna">
+          <img src="assets/signs/virgo.svg" class="sign-icon">
+        </div>
+        <div class="sign" name="Lev" api-name="lev">
+          <img src="assets/signs/leo.svg" class="sign-icon">
+        </div>
+        <div class="sign" name="Rak" api-name="rak">
+          <img src="assets/signs/cancer.svg" class="sign-icon">
+        </div>
+        <div class="sign" name="Blíženci" api-name="blizenci">
+          <img src="assets/signs/gemini.svg" class="sign-icon">
+        </div>
+        <div class="sign" name="Býk" api-name="byk">
+          <img src="assets/signs/taurus.svg" class="sign-icon">
+        </div>
+        <div class="center hide">
+          <p id="signName"></p>
+        </div>
+      </div>
+
+
+    </div>
+  </section>
+</body>
+
+</html>
