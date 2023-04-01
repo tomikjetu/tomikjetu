@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rajdhani&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="assets/style/root.css">
+  <link rel="stylesheet" href="assets/style/index.css">
+
+
+  <title>placeholder-name</title>
+</head>
+
+<body>
+
+  <!-- HEADER -->
+
+  <div class="header">
+
+    <div class="navigation-wrapper">
+      <a class="logo">
+        <img src="assets/images/logo.jpg">
+        <h1>placeholder-name</h1>
+      </a>
+
+      <nav>
+        <ul>
+          <li><a href="/#vote">Vote</a></li>
+          <li><a href="/#vip">Vip</a></li>
+          <li><a href="/#socials">Contact</a></li>
+        </ul>
+        <div class="burger-menu">
+          <img src="assets/icons/menu.svg">
+        </div>
+        <div class="close-menu">
+          <img src="assets/icons/close.svg">
+        </div>
+
+        <script>
+          var burger_menu = document.getElementsByClassName("burger-menu")[0];
+          var close_menu = document.getElementsByClassName("close-menu")[0];
+
+          var switchMenu = (event) => {
+            document.querySelector("nav").classList.toggle("active");
+          }
+
+          burger_menu.addEventListener("click", switchMenu);
+          close_menu.addEventListener("click", switchMenu);
+        </script>
+
+      </nav>
+    </div>
+
+
+    <div class="ip-address">
+      <p class="address">placeholder-ip</p>
+      <p class="addition">click to copy</p>
+
+      <script>
+        var address = document.getElementsByClassName("ip-address")[0].children[0];
+        var addition = document.getElementsByClassName("ip-address")[0].children[1];
+        address.addEventListener("click", (event) => {
+          addition.innerText = "copied";
+          navigator.clipboard.writeText("minesurv.eu");
+        });
+      </script>
+
+    </div>
+
+    <a href="#stats" class="read-more"><img src="assets/icons/bottom-arrow.svg" alt=""></a>
+
+
+  </div>
+
+  <section class="stats" id="stats">
+    <div class="stats-wrapper">
+      <div class="stat">
+        <h1 stat="registered">21</h1>
+        <p>Online Players</p>
+      </div>
+      <div class="stat">
+        <h1 stat="registered">750+</h1>
+        <p>Registered Players</p>
+      </div>
+      <div class="stat">
+        <h1 stat="registered">5.5K+</h1>
+        <p>Hours Played</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="vote" id="vote">
+    <div class="row">
+      <div class="col">
+        <div class="vote-text">
+          <h1>Vote for our server!</h1>
+          <p>Rewards you receive on the server</p>
+          <div class="rewards">
+            <div class="reward">
+              <img src="assets/images/mc/key.png">
+              <p>Vote key</p>
+            </div>
+            <div class="reward">
+              <img src="assets/images/mc/coins.png">
+              <p>$1000</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="vote-links">
+          <button>Link 1</button>
+          <button>Link 2</button>
+          <button>Link 3</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="socials" id="socials">
+    <div class="socials-wrapper">
+      <div class="social">
+        <a href=""><img src="assets/images/socials/discord.svg" alt=""></a>
+      </div>
+      <div class="social">
+        <a href=""><img src="assets/images/socials/instagram.svg" alt=""></a>
+      </div>
+      <div class="social">
+        <a href=""><img src="assets/images/socials/facebook.svg" alt=""></a>
+      </div>
+      <div class="social">
+        <a href=""><img src="assets/images/socials/youtube.svg" alt=""></a>
+      </div>
+      <div class="social">
+        <a href=""><img src="assets/images/socials/twitch.svg" alt=""></a>
+      </div>
+      <div class="social">
+        <a href=""><img src="assets/images/socials/tiktok.svg" alt=""></a>
+      </div>
+    </div>
+  </section>
+
+  <section class="vip" id="vip">
+    <div class="vip-wrapper">
+      <div class="vip-content">
+        <h1>VIP</h1>
+        <ul>
+          <li>Fly</li>
+          <li>$1000</li>
+          <li>Vip Kit</li>
+          <li>And more...</li>
+        </ul>
+        <a href="">
+          <p class="price">$5</p>
+        </a>
+      </div>
+      <div class="vip-content">
+        <h1>VIP+</h1>
+        <ul>
+          <li>Fly</li>
+          <li>$1000</li>
+          <li>Vip Kit</li>
+          <li>And more...</li>
+        </ul>
+        <a href="">
+          <p class="price">$15</p>
+        </a>
+      </div>
+      <div class="vip-content">
+        <h1>VIP++</h1>
+        <ul>
+          <li>Fly</li>
+          <li>$1000</li>
+          <li>Vip Kit</li>
+          <li>And more...</li>
+        </ul>
+        <a href="">
+          <p class="price">$50</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <div class="footer">
+    <p>
+      © placeholder-servername 2022
+    </p>
+
+    <a class="credit" href="https://tomikjetu.me" target="_blank">
+      Made with <img src="assets/icons/heart.svg" class="icon"> by tomikjetu.
+    </a>
+  </div>
+
+</body>
+
+</html>

@@ -1,0 +1,143 @@
+* {
+  padding: 0px;
+  margin: 0;
+}
+
+body {}
+
+html {
+  font-family: 'Rajdhani', sans-serif;
+  scroll-behavior: smooth;
+}
+
+
+.header {
+  min-height: 100vh;
+  position: relative;
+}
+
+.navigation-wrapper {
+  display: inline-flex;
+  align-items: center;
+  width: 100%;
+  z-index: 2;
+}
+
+.header .logo {
+  display: inline-flex;
+  align-items: center;
+}
+
+.header .logo img {
+  width: 4em;
+  padding: 2em;
+  cursor: pointer;
+}
+
+.header nav {
+  flex: 1;
+  z-index: 2;
+}
+
+.header nav ul {
+  display: flex;
+  justify-content: flex-end;
+  list-style: none;
+  z-index: 2;
+}
+
+.header nav ul a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.5em;
+  margin: 0 1em;
+}
+
+.burger-menu {
+  display: none;
+  float: right;
+  margin-right: 2em;
+  cursor: pointer;
+}
+
+.close-menu {
+  display: none;
+}
+
+@media (max-width: 750px) {
+  .header nav ul {
+    display: none;
+  }
+
+  .burger-menu {
+    display: block;
+  }
+
+  .active .close-menu {
+    display: block;
+    position: absolute;
+    top: 1.5em;
+    right: 2em;
+    z-index: 3;
+    cursor: pointer;
+  }
+
+  nav.active ul {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: fit-content;
+    background-color: white;
+    display: block;
+  }
+
+  nav.active ul li {
+    text-align: center;
+  }
+
+  .header nav.active a {
+    color: black;
+    line-height: 3em;
+  }
+
+  nav.active .burger-menu {
+    display: none;
+  }
+}
+
+section {
+  max-width: 100vw;
+  padding: 1em;
+}
+
+.row {
+  display: flex;
+}
+
+.col {
+  flex: 1;
+}
+
+.footer {
+  text-align: center;
+  padding: 0.5em;
+}
+
+.footer .credit {
+  display: inline-flex;
+  justify-content: center;
+  text-decoration: none;
+  color: black;
+}
+
+.footer .icon {
+  width: 1.5em;
+  margin: 0 4px;
+}
+
+@media (max-width: 1000px) {
+  .row {
+    flex-direction: column;
+  }
+}
