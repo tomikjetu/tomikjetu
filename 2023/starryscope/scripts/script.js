@@ -42,7 +42,6 @@ function UpdateCircleGraphs() {
       sign.addEventListener("mouseover", () => { display(sign); });
       sign.addEventListener("mouseenter", () => { zodiacCenter.classList.remove("hide"); });
       sign.addEventListener("mouseleave", () => { zodiacCenter.classList.add("hide") });
-      sign.addEventListener("click", () => { generate(sign) });
     }
   });
 }
@@ -73,8 +72,6 @@ function display(sign) {
   const name = sign.getAttribute("name");
   apiName = sign.getAttribute("api-name");
   document.getElementById("signName").innerText = name;
-
-  UpdateSelectedDate();
 }
 
 
